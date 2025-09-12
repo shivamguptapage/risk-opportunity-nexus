@@ -54,7 +54,7 @@ export function Dashboard() {
             <select
               value={selectedTimeRange}
               onChange={(e) => setSelectedTimeRange(e.target.value)}
-              className="bg-card border border-border rounded-lg px-3 py-2 text-sm"
+              className="bg-card border border-border rounded-lg px-3 py-2 text-sm text-foreground"
             >
               <option value="7d">Last 7 days</option>
               <option value="30d">Last 30 days</option>

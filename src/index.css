@@ -8,115 +8,127 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Light mode - Modern clean theme */
+    --background: 0 0% 100%;
+    --foreground: 222 15% 12%;
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 15% 12%;
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 15% 12%;
 
     --primary: 217 91% 60%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 215 25% 96%;
+    --secondary-foreground: 222 15% 12%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 215 25% 96%;
+    --muted-foreground: 215 15% 45%;
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 215 25% 96%;
+    --accent-foreground: 222 15% 12%;
 
-    --destructive: 0 72% 51%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --border: 215 20% 90%;
+    --input: 215 20% 90%;
     --ring: 217 91% 60%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Dashboard specific tokens */
-    --dashboard-bg: 240 10% 3.9%;
-    --dashboard-card: 240 6% 10%;
-    --dashboard-border: 240 3.7% 15.9%;
+    /* Dashboard specific tokens - Light mode */
+    --dashboard-bg: 215 25% 98%;
+    --dashboard-card: 0 0% 100%;
+    --dashboard-border: 215 20% 88%;
     
-    /* Risk indicators */
-    --risk-high: 0 72% 51%;
-    --risk-medium: 25 95% 53%;
+    /* Risk indicators - More vibrant */
+    --risk-high: 0 84% 60%;
+    --risk-medium: 30 100% 50%;
     --risk-low: 142 76% 36%;
     
-    /* Opportunity indicators */
-    --opportunity-high: 142 76% 36%;
+    /* Opportunity indicators - Fresh greens and blues */
+    --opportunity-high: 142 71% 45%;
     --opportunity-medium: 217 91% 60%;
-    --opportunity-low: 240 5% 64.9%;
+    --opportunity-low: 215 15% 65%;
     
-    /* Gradients */
+    /* Modern gradients */
     --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
-    --gradient-risk: linear-gradient(135deg, hsl(0 72% 51%), hsl(0 72% 61%));
-    --gradient-opportunity: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
-    --gradient-card: linear-gradient(135deg, hsl(240 6% 10%), hsl(240 6% 12%));
+    --gradient-risk: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 70%));
+    --gradient-opportunity: linear-gradient(135deg, hsl(142 71% 45%), hsl(142 71% 55%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(215 25% 98%));
     
-    /* Shadows */
-    --shadow-dashboard: 0 10px 30px -5px hsl(240 10% 3.9% / 0.3);
-    --shadow-card: 0 4px 20px -2px hsl(240 10% 3.9% / 0.2);
-    --shadow-widget: 0 2px 10px -1px hsl(240 10% 3.9% / 0.15);
+    /* Subtle shadows for depth */
+    --shadow-dashboard: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-widget: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 15% 12%;
+    --sidebar-primary: 217 91% 60%;
     --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 215 25% 96%;
+    --sidebar-accent-foreground: 222 15% 12%;
+    --sidebar-border: 215 20% 90%;
+    --sidebar-ring: 217 91% 60%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode - Professional and elegant */
+    --background: 222 47% 4%;
+    --foreground: 215 25% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 222 47% 6%;
+    --card-foreground: 215 25% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222 47% 6%;
+    --popover-foreground: 215 25% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 217 91% 65%;
+    --primary-foreground: 222 47% 4%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 217 32% 14%;
+    --secondary-foreground: 215 25% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 217 32% 14%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 217 32% 14%;
+    --accent-foreground: 215 25% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 215 25% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 217 32% 14%;
+    --input: 217 32% 14%;
+    --ring: 217 91% 65%;
+
+    /* Dashboard specific tokens - Dark mode */
+    --dashboard-bg: 222 47% 4%;
+    --dashboard-card: 222 47% 6%;
+    --dashboard-border: 217 32% 14%;
+    
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 65%), hsl(217 91% 75%));
+    --gradient-risk: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 70%));
+    --gradient-opportunity: linear-gradient(135deg, hsl(142 71% 45%), hsl(142 71% 55%));
+    --gradient-card: linear-gradient(135deg, hsl(222 47% 6%), hsl(222 47% 8%));
+    
+    /* Dark mode shadows */
+    --shadow-dashboard: 0 25px 50px -12px hsl(0 0% 0% / 0.25);
+    --shadow-card: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    --shadow-widget: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 215 25% 95%;
+    --sidebar-primary: 217 91% 65%;
+    --sidebar-primary-foreground: 222 47% 4%;
+    --sidebar-accent: 217 32% 14%;
+    --sidebar-accent-foreground: 215 25% 95%;
+    --sidebar-border: 217 32% 14%;
+    --sidebar-ring: 217 91% 65%;
   }
 }
 
