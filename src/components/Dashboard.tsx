@@ -17,6 +17,7 @@ import { MetricCard } from "./MetricCard";
 import { RiskModule } from "./RiskModule";
 import { CrossSaleModule } from "./CrossSaleModule";
 import { SupplierOnboardingModule } from "./SupplierOnboardingModule";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Dashboard() {
   const [selectedTimeRange, setSelectedTimeRange] = useState("30d");
@@ -61,6 +62,7 @@ export function Dashboard() {
               <option value="3m">Last 3 months</option>
               <option value="custom">Custom Range</option>
             </select>
+            <ThemeToggle />
           </div>
         </div>
 

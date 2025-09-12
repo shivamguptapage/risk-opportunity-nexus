@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { 
   UserPlus, 
   Eye, 
@@ -129,9 +130,11 @@ export function SupplierOnboardingModule({ timeRange }: SupplierOnboardingModule
                       <Package className="h-4 w-4" />
                       <span>Competitive pricing • High volume • Reliable supply chain</span>
                     </div>
-                    <Button variant="outline" size="sm" className="flex items-center gap-2">
-                      <Eye className="h-4 w-4" />
-                      Evaluate
+                    <Button variant="outline" size="sm" className="flex items-center gap-2" asChild>
+                      <Link to={`/supplier/${supplier.id}`}>
+                        <Eye className="h-4 w-4" />
+                        Evaluate
+                      </Link>
                     </Button>
                   </div>
                 </div>
