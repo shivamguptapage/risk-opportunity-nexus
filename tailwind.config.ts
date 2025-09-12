@@ -57,6 +57,33 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Dashboard specific colors
+        dashboard: {
+          bg: "hsl(var(--dashboard-bg))",
+          card: "hsl(var(--dashboard-card))",
+          border: "hsl(var(--dashboard-border))",
+        },
+        risk: {
+          high: "hsl(var(--risk-high))",
+          medium: "hsl(var(--risk-medium))",
+          low: "hsl(var(--risk-low))",
+        },
+        opportunity: {
+          high: "hsl(var(--opportunity-high))",
+          medium: "hsl(var(--opportunity-medium))",
+          low: "hsl(var(--opportunity-low))",
+        },
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-risk': 'var(--gradient-risk)',
+        'gradient-opportunity': 'var(--gradient-opportunity)',
+        'gradient-card': 'var(--gradient-card)',
+      },
+      boxShadow: {
+        'dashboard': 'var(--shadow-dashboard)',
+        'card': 'var(--shadow-card)',
+        'widget': 'var(--shadow-widget)',
       },
       borderRadius: {
         lg: "var(--radius)",
