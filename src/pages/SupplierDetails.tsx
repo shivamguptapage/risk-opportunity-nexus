@@ -70,13 +70,15 @@ export default function SupplierDetails() {
         {/* Header */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <button 
+            <Button 
+              variant="outline" 
+              size="sm" 
               onClick={() => navigate("/")}
-              className="back-btn"
+              className="flex items-center gap-2"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Dashboard
-            </button>
+            </Button>
             <div>
               <h1 className="text-3xl font-bold text-foreground">Supplier Evaluation</h1>
               <p className="text-muted-foreground">Detailed analysis for {supplier.supplierName}</p>
