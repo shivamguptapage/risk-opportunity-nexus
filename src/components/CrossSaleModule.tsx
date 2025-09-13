@@ -74,9 +74,14 @@ export function CrossSaleModule({ timeRange }: CrossSaleModuleProps) {
       {/* Cross-Sale Opportunities */}
       <Card className="bg-gradient-card border-dashboard-border shadow-card">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Target className="h-5 w-5 text-opportunity-high" />
-            High-Priority Cross-Sale Opportunities
+          <CardTitle className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Target className="h-5 w-5 text-opportunity-high" />
+              High-Priority Cross-Sale Opportunities
+            </div>
+            <Button variant="outline" size="sm" asChild>
+              <Link to="/all-cross-sale-opportunities">View All</Link>
+            </Button>
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -154,7 +159,12 @@ export function CrossSaleModule({ timeRange }: CrossSaleModuleProps) {
       <div className="grid gap-6 lg:grid-cols-2">
         <Card className="bg-gradient-card border-dashboard-border shadow-card">
           <CardHeader>
-            <CardTitle>Top Cross-Sale Categories</CardTitle>
+            <CardTitle className="flex items-center justify-between">
+              <span>Top Cross-Sale Categories</span>
+              <Button variant="outline" size="sm" asChild>
+                <Link to="/all-cross-sale-categories">View All</Link>
+              </Button>
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-3">

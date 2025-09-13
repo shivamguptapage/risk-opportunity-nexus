@@ -9,6 +9,12 @@ import NotFound from "./pages/NotFound";
 import RiskDetails from "./pages/RiskDetails";
 import CrossSaleDetails from "./pages/CrossSaleDetails";
 import SupplierDetails from "./pages/SupplierDetails";
+import AllRiskCases from "./pages/AllRiskCases";
+import AllAtRiskClients from "./pages/AllAtRiskClients";
+import AllCrossSaleCategories from "./pages/AllCrossSaleCategories";
+import AllCrossSaleOpportunities from "./pages/AllCrossSaleOpportunities";
+import AllSupplierCategories from "./pages/AllSupplierCategories";
+import AllSupplierCandidates from "./pages/AllSupplierCandidates";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +30,12 @@ const App = () => (
             <Route path="/risk/:id" element={<RiskDetails />} />
             <Route path="/cross-sale/:id" element={<CrossSaleDetails />} />
             <Route path="/supplier/:id" element={<SupplierDetails />} />
+            <Route path="/all-risk-cases" element={<AllRiskCases />} />
+            <Route path="/all-at-risk-clients" element={<AllAtRiskClients />} />
+            <Route path="/all-cross-sale-categories" element={<AllCrossSaleCategories />} />
+            <Route path="/all-cross-sale-opportunities" element={<AllCrossSaleOpportunities />} />
+            <Route path="/all-supplier-categories" element={<AllSupplierCategories />} />
+            <Route path="/all-supplier-candidates" element={<AllSupplierCandidates />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

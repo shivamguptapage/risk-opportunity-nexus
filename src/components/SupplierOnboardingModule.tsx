@@ -71,9 +71,14 @@ export function SupplierOnboardingModule({ timeRange }: SupplierOnboardingModule
       {/* Supplier Onboarding Candidates */}
       <Card className="bg-gradient-card border-dashboard-border shadow-card">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <UserPlus className="h-5 w-5 text-opportunity-high" />
-            Top Supplier Onboarding Candidates
+          <CardTitle className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <UserPlus className="h-5 w-5 text-opportunity-high" />
+              Top Supplier Onboarding Candidates
+            </div>
+            <Button variant="outline" size="sm" asChild>
+              <Link to="/all-supplier-candidates">View All</Link>
+            </Button>
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -148,7 +153,12 @@ export function SupplierOnboardingModule({ timeRange }: SupplierOnboardingModule
       <div className="grid gap-6 lg:grid-cols-2">
         <Card className="bg-gradient-card border-dashboard-border shadow-card">
           <CardHeader>
-            <CardTitle>Onboarding Potential by Category</CardTitle>
+            <CardTitle className="flex items-center justify-between">
+              <span>Onboarding Potential by Category</span>
+              <Button variant="outline" size="sm" asChild>
+                <Link to="/all-supplier-categories">View All</Link>
+              </Button>
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-3">

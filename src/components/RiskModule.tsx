@@ -67,9 +67,14 @@ export function RiskModule({ timeRange }: RiskModuleProps) {
       {/* Recent Risk Cases */}
       <Card className="bg-gradient-card border-dashboard-border shadow-card">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <AlertTriangle className="h-5 w-5 text-risk-high" />
-            Recent Risk Cases (Last 3 Days)
+          <CardTitle className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <AlertTriangle className="h-5 w-5 text-risk-high" />
+              Recent Risk Cases (Last 3 Days)
+            </div>
+            <Button variant="outline" size="sm" asChild>
+              <Link to="/all-risk-cases">View All</Link>
+            </Button>
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -118,7 +123,12 @@ export function RiskModule({ timeRange }: RiskModuleProps) {
       <div className="grid gap-6 lg:grid-cols-2">
         <Card className="bg-gradient-card border-dashboard-border shadow-card">
           <CardHeader>
-            <CardTitle>Top At-Risk Clients</CardTitle>
+            <CardTitle className="flex items-center justify-between">
+              <span>Top At-Risk Clients</span>
+              <Button variant="outline" size="sm" asChild>
+                <Link to="/all-at-risk-clients">View All</Link>
+              </Button>
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-3">
